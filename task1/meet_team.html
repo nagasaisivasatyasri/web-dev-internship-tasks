@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        .family{
+            background-color: white;
+        }
+        .ribbon{
+            --f: 10px; /* control the folded part*/
+            --r: 25px; /* control the ribbon shape */
+            --c: 20px;
+            position: absolute;
+            top:10px;
+           width:10%;
+            padding: 30px;
+            background: violet;
+        }
+        .right {
+            right: calc(-1*var(--f));
+            border-left: var(--r) solid #0000;
+            clip-path: polygon(100% 0%, 100% 60%, 100% 100%, 0% 100%, 40% 54%, 0 0);
+            
+                    }
+        .companyname{
+            margin-top: 100px;
+            margin-right:auto;
+            margin-left: auto;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 10px 0;
+            width: 30%;
+            background-color: violet;
+            color: white;
+            font-weight: bolder;
+           
+            border-radius: 5px;
+            font-family: sans-serif;
+        } 
+        .description{
+            margin-right:auto;
+            margin-left: auto;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: sans-serif;
+
+        }
+        .line{
+            border-style: dashed;
+            border-color: violet;
+            margin-left: auto;
+            margin-right: auto;
+            width:70%;
+        }
+        .mot{
+            margin-right:auto;
+            margin-left: auto;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: sans-serif;
+
+        }
+        .lmt{
+            margin-top: 50px;
+            margin-right:auto;
+            margin-left: auto;
+            margin-bottom: 10px;
+            padding-top:20px;
+            padding-bottom: 20px;
+            text-align: center;
+            width: 30%;
+            background-color: violet;
+            color: white;
+            font-weight: bolder;
+           
+            border-radius: 5px;
+            font-family: sans-serif;
+        }
+        .sep{
+            display: flex;
+            
+        }
+        .ribbon2{
+            align-items: start;
+            position:static;
+            background-color: violet;
+            padding: 30px;
+            width:5%;
+
+        }
+        #dt{
+            text-justify: center;
+            width: 20%;    
+            margin-right:auto;
+            margin-left: auto;
+            margin-bottom: 10px;
+            padding-top:20px;
+            padding-bottom: 20px;
+            text-align: center;
+            background-color: violet;
+            color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-family: sans-serif;
+        }
+        .left{
+            background-color: violet;
+            clip-path: polygon(100% 1%, 70% 50%, 100% 100%, 0% 100%, 0 24%, 0 0);
+        }  
+        h4#smt1{
+            
+        }
+        .ribbon3{
+           
+            align-items: end;
+            --f:10px;
+            --r:25px;
+            --c:20px;
+            position:static;
+            background-color: violet;
+            padding: 30px;
+            width:5%;
+        }
+        .right2{
+           
+            right: calc(-1*var(--f));
+            
+            border-left:var(--r);
+            clip-path: polygon(100% 0%, 100% 60%, 100% 100%, 0% 100%, 40% 54%, 0 0);
+        }
+        #smt1
+        {
+            
+            margin-right:auto;
+            margin-left: auto;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 20px;
+            width: 30%;
+            background-color: violet;
+            color: white;
+            font-weight: bolder;
+           
+            border-radius: 5px;
+            font-family: sans-serif; 
+        }
+       
+        #imgs{
+           text-align: center;
+          
+        }
+       figure{
+         display: inline-block;
+         padding: 50px;
+        }
+     
+    @media screen and (max-width: 800px) {
+  .family{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="family">
+    <div class="ribbon right"></div>
+    <div class="companyname">
+        <h3>Company Name</h3>
+    </div>
+    <div class="description">
+        <p>Welcome to [Your Company Name], Where a dedicated team of professionals works together to bring innovation,creativity and expertise to software industry.get to know the induviduals who make our company thrive. </p>
+    </div>
+    <p class="line"></p>
+    <h3 class="mot">Meet Our Team</h3>
+    <h4 class="lmt">Leadership/Management Team</h4>
+    <div class="team">
+        <div id="imgs">
+            <div id="imgs">
+            <figure>
+            <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+            <figcaption style="font-family: sans-serif;">[Founder Name]<p>Founder/CEO</p></figcaption>
+        </figure>
+            <figure>
+            <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+            <figcaption style="font-family: sans-serif;">[Founder Name]
+                <p>Founder/CEO</p></figcaption>
+        </figure>
+             </div>
+             <div id="imgs">
+                <figure>
+                    <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                    <figcaption style="font-family: sans-serif;">[VP Name]
+                        <p>vp,development & growth</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                    <figcaption style="font-family: sans-serif;">[VP Name]
+                        <p>vp,development & growth</p>
+                    </figcaption>
+                    
+                </figure>
+                <figure>
+                    <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                    <figcaption >[VP Name]
+                        <p>vp,development & growth</p>
+                    </figcaption>
+                </figure>
+             </div>
+        </div>
+    </div>
+    <div class="sep">
+        <div class="ribbon2 left"></div>
+        <h4 id="dt">Development Team</h4>
+    </div>
+    <div id="imgs">
+        <figure>
+            <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+            <figcaption style="font-family: sans-serif;">[Developer Name]<p>Software Engineer</p>
+            </figcaption>
+        </figure>
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Developer Name]<p>Software Engineer</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Developer Name]<p>Software Engineer</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Developer Name]<p>Software Engineer</p>
+                </figcaption>
+            </figure>
+            <div id="#imgs">
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Developer Name]<p>Software Engineer</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Developer Name]<p>Software Engineer</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Developer Name]<p>Software Engineer</p>
+                </figcaption>
+            </figure>
+        </div>
+         </div>
+    <div class="sep">
+        <h4 id="smt1">Sales and Marketing Team</h4>
+        <div class="ribbon3 right2" id="r"></div>
+    </div>
+    <div id="imgs">
+        <figure>
+            <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+            <figcaption style="font-family: sans-serif;">[Employee Name]<p>Team Lead</p>
+            </figcaption>
+        </figure>
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Employee Name]<p>Sales officer</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Employee Name]<p>Sales officer</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Employee Name]<p>Sales officer</p>
+                </figcaption>
+            </figure>
+            <div id="#imgs5">
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Employee Name]<p>Marketing officer</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Employee Name]<p>Marketing officer</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\Swaroop\Desktop\satyasri\New folder\male.png" alt="[Founder Name]">
+                <figcaption style="font-family: sans-serif;">[Employee Name]<p>Marketing officer</p>
+                </figcaption>
+            </figure>
+        </div>
+         </div>
+        <div class="ribbon2 left" id="r"></div>
+    
+</div>
+</body>
+</html>
